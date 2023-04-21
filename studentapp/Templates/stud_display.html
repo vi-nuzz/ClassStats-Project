@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Display</title>
+</head>
+<body>
+<form method="post"> {% csrf_token %}
+<center>
+    <br><br>
+    <h2>Student Display</h2>
+
+<table border="2" style="background-color: #20c997;">
+    <tr>
+        <th>SI No.</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Score for Physics</th>
+        <th>Score for Chemistry</th>
+        <th>Score for Maths</th>
+        <th>Score for Computer Science</th>
+        <th>Total Percentage</th>
+    </tr>
+    {% for i in a %}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.student_name}}</td>
+        <td>{{i.dateofbirth}}</td>
+        <td>{{i.physics}}</td>
+        <td>{{i.chemistry}}</td>
+        <td>{{i.maths}}</td>
+        <td>{{i.computerscience}}</td>
+        <td>{{i.percentage}}</td>
+    </tr>
+    {% endfor %}
+</table>
+    <br>
+    <div class="d-grid gap-2">
+  <button><a href="http://127.0.0.1:8000/studentapp/stud_details/" class="btn btn-primary" type="button">Add Student Details</a></button>
+
+</div>
+</center>
+</form>
+
+</body>
+</html>
