@@ -10,4 +10,5 @@ Screenshots :
 
 2. Display Student Details Page :
 
-![1](https://user-images.githubusercontent.com/122655109/233639347-3f3d4a21-cb10-45bd-984d-a5d64c0dff44.jpg)
+![3](https://user-images.githubusercontent.com/122655109/233677113-ee943cb5-e91e-4dbe-a0ae-4530722ee78f.jpg)
+
